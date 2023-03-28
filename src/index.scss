@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #FFF;
+  color: #000;
+  margin: 0;
+  transition: background 0.2s linear;
+}
+
+a {
+  color: #00F;
+  border-radius: 4px;
+
+  &:hover {
+    color: #77F;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: 1px dashed #333;
+  }
+}
+
+.button {
+  font-size: 1rem;
+  background: #EEE;
+  color: #000;
+  border: 1px solid #111;
+  border-radius: 4px;
+  padding: 8px 16px;
+  min-width: 112px;
+  cursor: pointer;
+
+  &:active {
+    background: none;
+  }
+
+  &:focus {
+    outline: 1px dashed #333;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.loader {
+  border: 8px solid #EEE;
+  border-top: 8px solid #111;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@import './darkmode.scss'

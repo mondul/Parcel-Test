@@ -1,0 +1,32 @@
+body.darkmode {
+  background: #000;
+  color: #FFF;
+
+  a {
+    color: #FF0;
+
+    &:hover {
+      color: #FF7;
+    }
+
+    &:focus {
+      outline-color: #CCC;
+    }
+  }
+
+  .button {
+    font-size: 1rem;
+    background: #111;
+    color: #FFF;
+    border: 1px solid #EEE;
+
+    &:focus {
+      outline-color: #CCC;
+    }
+  }
+
+  .loader {
+    border-color: #111;
+    border-top-color: #EEE;
+  }
+}

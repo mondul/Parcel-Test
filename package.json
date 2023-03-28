@@ -1,0 +1,26 @@
+{
+  "name": "parcel_test",
+  "version": "1.0.0",
+  "description": "Parcel test",
+  "license": "MIT",
+  "scripts": {
+    "prestart": "rimraf .parcel-cache",
+    "start": "parcel src/index.html",
+    "prebuild": "rimraf dist",
+    "build": "parcel build src/index.html --no-source-maps"
+  },
+  "dependencies": {
+    "@nanostores/persistent": "^0.7.0",
+    "@nanostores/preact": "^0.3.1",
+    "preact": "^10.13.1",
+    "wouter-preact": "^2.10.0-alpha.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3",
+    "rimraf": "^4.4.1"
+  },
+  "alias": {
+    "preact/jsx-dev-runtime": "preact/jsx-runtime"
+  }
+}

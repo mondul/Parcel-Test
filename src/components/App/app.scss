@@ -1,0 +1,63 @@
+nav, main {
+  padding: 8px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background: #DDD;
+
+  & > a {
+    margin: 0 8px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  & > span:first-of-type {
+    margin-left: auto;
+  }
+}
+
+#dark-toggle-container {
+  border: 1px solid #111;
+  background: #EEE;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50px;
+  height: 28px;
+  border-radius: 14px;
+
+  & > input[type=checkbox] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+
+    &:checked + #dark-toggle-ball {
+      left: 23px;
+    }
+  }
+
+  #dark-toggle-ball {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background: #DDD;
+    border: 1px solid #111;
+    border-radius: 50%;
+    transition: left 0.1s linear;
+  }
+}
+
+@import './darkmode.scss'
