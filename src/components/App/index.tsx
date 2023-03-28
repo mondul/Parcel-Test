@@ -60,7 +60,6 @@ export default function App() {
         <Switch>
           <Route path="/" component={Home} />
           <Route path="/info" component={Info} />
-          <Route path="/loading" component={Loading} />
           <Route component={NotFound} />
         </Switch>
       </Suspense>
