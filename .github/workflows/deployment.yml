@@ -1,6 +1,10 @@
 name: Deploy Website
 
-on: [push]
+on:
+  push:
+    paths:
+      - 'src/**'
+      - 'static/**'
 
 jobs:
   build:
@@ -16,4 +20,4 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: cp dist/index.html dist/200.html
-      - run: surge dist --domain ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+      - run: surge dist --domain https://${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
