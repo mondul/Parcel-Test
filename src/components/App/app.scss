@@ -24,16 +24,15 @@ nav {
   }
 }
 
-#dark-toggle-container {
+#dark-toggle {
   border: 1px solid #111;
   background: #EEE;
   position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
+  display: inline-block;
   width: 50px;
   height: 28px;
   border-radius: 14px;
+  cursor: pointer;
 
   & > input[type=checkbox] {
     position: absolute;
@@ -41,18 +40,17 @@ nav {
     height: 0;
     opacity: 0;
 
-    &:checked + #dark-toggle-ball {
+    &:checked + span {
       left: 23px;
     }
   }
 
-  #dark-toggle-ball {
+  & > span {
     position: absolute;
     left: 1px;
     top: 1px;
     width: 24px;
     height: 24px;
-    cursor: pointer;
     background: #DDD;
     border: 1px solid #111;
     border-radius: 50%;

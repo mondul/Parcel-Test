@@ -4,11 +4,11 @@ body.darkmode {
   }
 
 
-  #dark-toggle-container {
+  #dark-toggle {
     border-color: #EEE;
     background: #111;
 
-    #dark-toggle-ball {
+    & > span {
       background: #222;
       border-color: #EEE;
     }

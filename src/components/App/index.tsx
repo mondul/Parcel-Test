@@ -49,10 +49,10 @@ export default function App() {
       <Link href="/info">Info</Link>
       <Link href="/something">Something</Link>
       <span>Count: {current_count}&emsp;</span>
-      <span id="dark-toggle-container">
-        <input type="checkbox" id="dark-toggle" checked={is_dark} onClick={changeDarkMode} />
-        <label htmlFor="dark-toggle" id="dark-toggle-ball">{is_dark ? <Moon /> : <Sun />}</label>
-      </span>
+      <label id="dark-toggle">
+        <input type="checkbox" checked={is_dark} onClick={changeDarkMode} />
+        <span>{is_dark ? <Moon /> : <Sun />}</span>
+      </label>
     </nav>
 
     <main>
