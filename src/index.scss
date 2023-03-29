@@ -2,8 +2,11 @@
   box-sizing: border-box;
 }
 
+body, button {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
 body {
-  font-family: sans-serif;
   background: #FFF;
   color: #000;
   margin: 0;
