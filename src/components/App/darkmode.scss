@@ -2,15 +2,4 @@ body.darkmode {
   nav {
     background: #222;
   }
-
-
-  #dark-toggle {
-    border-color: #EEE;
-    background: #111;
-
-    & > span {
-      background: #222;
-      border-color: #EEE;
-    }
-  }
 }
