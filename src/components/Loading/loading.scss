@@ -1,3 +1,5 @@
+@use './darkmode.scss';
+
 #loading {
   position: fixed;
   top: 0;
@@ -9,5 +11,3 @@
   justify-content: center;
   background: rgba(255, 255, 255, 0.8);
 }
-
-@import './darkmode.scss'

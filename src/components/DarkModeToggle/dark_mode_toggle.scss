@@ -1,3 +1,5 @@
+@use './darkmode.scss';
+
 #dark-toggle {
   position: relative;
   border: 1px solid #111;
@@ -30,5 +32,3 @@
     transition: left 0.1s linear;
   }
 }
-
-@import './darkmode.scss'

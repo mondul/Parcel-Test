@@ -1,3 +1,5 @@
+@use './darkmode.scss';
+
 nav, main {
   padding: 8px;
 }
@@ -23,5 +25,3 @@ nav {
     margin: 0 16px 0 auto;
   }
 }
-
-@import './darkmode.scss'
